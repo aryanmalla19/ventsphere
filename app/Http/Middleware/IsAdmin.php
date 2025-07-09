@@ -16,9 +16,9 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-//        if(!Auth::check() || !Auth::user()->isAdmin()){
-//            abort('You must be admin');
-//        }
+        if(!Auth::check() || !Auth::user()->isAdmin()){
+            abort('You must be admin');
+        }
         return $next($request);
     }
 }
