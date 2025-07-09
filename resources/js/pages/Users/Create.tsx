@@ -17,9 +17,7 @@ const breadcrumbs: BreadcrumbItem[] = [
 
 export default function Create() {
     const { data, setData, processing, post, errors } = useForm({
-        first_name: '',
-        last_name: '',
-        username: '',
+        name: '',
         email: '',
         password: '',
         remarks: '',
@@ -35,28 +33,21 @@ export default function Create() {
             <div className="w-8/12 p-4">
                 <form onSubmit={handleSubmit} action={ route('users.store') } method="POST" className="space-y-4">
                     <div>
-                        <Label htmlFor="first_name">First Name</Label>
-                        <Input name="first_name" value={data.first_name} onChange={(e) => setData('first_name', e.target.value)}></Input>
-                    </div>
-
-                    <div>
-                        <Label htmlFor="last_name">Last Name</Label>
-                        <Input name="last_name" value={data.last_name} onChange={(e) => setData('last_name', e.target.value)}></Input>
-                    </div>
-
-                    <div>
-                        <Label htmlFor="username">Username</Label>
-                        <Input name="username" value={data.username} onChange={(e) => setData('username', e.target.value)}></Input>
+                        <Label htmlFor="name">Name</Label>
+                        <Input id="name" name="name" type="text" value={data.name} onChange={(e) => setData('name', e.target.value)}></Input>
+                        {errors.name && <div className="text-red-500 text-sm">{errors.name}</div>}
                     </div>
 
                     <div>
                         <Label htmlFor="email">Email</Label>
-                        <Input name="email" value={data.email} onChange={(e) => setData('email', e.target.value)}></Input>
+                        <Input id="email" name="email" type="email" value={data.email} onChange={(e) => setData('email', e.target.value)}></Input>
+                        {errors.email && <div className="text-red-500 text-sm">{errors.email}</div>}
                     </div>
 
                     <div>
                         <Label htmlFor="password">Password</Label>
-                        <Input name="password" value={data.password} onChange={(e) => setData('password', e.target.value)}></Input>
+                        <Input id="password" name="password" type="password" value={data.password} onChange={(e) => setData('password', e.target.value)}></Input>
+                        {errors.password && <div className="text-red-500 text-sm">{errors.password}</div>}
                     </div>
 
                     <div>
