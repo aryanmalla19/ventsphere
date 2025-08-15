@@ -10,12 +10,11 @@ export function Footer(){
                 </div>
 
                 <div>
-                    <h1 className="font-semibold text-lg mb-2 text-[#092327] dark:text-white">Solutions</h1>
+                    <h1 className="font-semibold text-lg mb-2 text-[#092327] dark:text-white">Brand</h1>
                     <ul className="text-sm leading-7">
-                        <li>Small Business</li>
-                        <li>Freelancers</li>
-                        <li>Customers</li>
-                        <li>Teams</li>
+                        <li>About Us</li>
+                        <li>How It Works</li>
+                        <li>Team</li>
                     </ul>
                 </div>
                 <div>
@@ -24,25 +23,22 @@ export function Footer(){
                         <li>Small Business</li>
                         <li>Freelancers</li>
                         <li>Customers</li>
-                        <li>Teams</li>
                     </ul>
                 </div>
                 <div>
-                    <h1 className="font-semibold text-lg mb-2 text-[#092327] dark:text-white">Solutions</h1>
+                    <h1 className="font-semibold text-lg mb-2 text-[#092327] dark:text-white">Legal & Safety</h1>
                     <ul className="text-sm leading-7">
-                        <li>Small Business</li>
-                        <li>Freelancers</li>
-                        <li>Customers</li>
-                        <li>Teams</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                        <li>Disclaimer</li>
                     </ul>
                 </div>
                 <div>
-                    <h1 className="font-semibold text-lg mb-2 text-[#092327] dark:text-white">Solutions</h1>
+                    <h1 className="font-semibold text-lg mb-2 text-[#092327] dark:text-white">Support</h1>
                     <ul className="text-sm leading-7">
-                        <li>Small Business</li>
-                        <li>Freelancers</li>
-                        <li>Customers</li>
-                        <li>Teams</li>
+                        <li>Contact Us</li>
+                        <li>FAQ</li>
+                        <li>Resources & Hotlines</li>
                     </ul>
                 </div>
                 <div>
