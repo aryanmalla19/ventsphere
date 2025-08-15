@@ -3,11 +3,11 @@ import { Link } from '@inertiajs/react';
 
 export function Navbar() {
     return (
-        <header className="mb-6 w-full max-w-[335px] text-sm not-has-[nav]:hidden lg:max-w-6xl">
+        <header className="mb-6 w-full text-sm not-has-[nav]:hidden">
             <nav className="flex items-center justify-between gap-4 dark:text-white">
                 <div className="flex items-center gap-4">
                     <img className="w-10 h-10" src="/ventsphere_logo.png" alt="ventsphere_logo" />
-                    <h1 className="font-bold text-xl">VentSphere</h1>
+                    <h1 className="font-bold text-xl text-[#092327] dark:text-white">VentSphere</h1>
                 </div>
 
                 <div className="flex items-center gap-4">
